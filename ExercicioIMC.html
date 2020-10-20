@@ -1,0 +1,35 @@
+<!doctype  html>
+<html lang="pt-br">
+    <head>
+    <title>IMC</title>
+    <meta charset="utf-8"/>
+
+	
+<script>
+alert("Para calcular seu IMC forneça os dados solicitados a seguir.");
+var nome = prompt("Nome:");
+var altura = prompt("Altura:");
+var peso = prompt("Peso:");
+var imc=peso/(altura*altura);
+
+if(imc <= 18.5){
+	document.write(nome + "  você está abaixo do peso \n Classificação: Magreza \n Grau 0");
+	}else if(imc >18.5 && imc< 24.9){
+    document.write(nome + "  seu peso está normal \n Classificação: Normal  \n Grau 0");
+}else if(imc >25 && imc < 29.9){
+	alert(nome + "  você está acima do peso \nClassificação: Sobrepeso\nGrau 1 ");
+}else if (imc>30 && imc< 39.9) {
+	alert(nome + "  você está acima do peso \nClassificação: Obesidade\nGrau 2 ");
+}else if(imc >40.0) {
+    alert(nome + "  você está acima do peso \nClassificação: Obesidade Grave\nGrau 3 ");
+
+}
+</script>
+
+
+</head>
+<body>
+
+
+   </body>
+</html>
